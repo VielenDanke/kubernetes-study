@@ -1,0 +1,3 @@
+[submodule "school-dev-k8s"]
+	path = school-dev-k8s
+	url = https://github.com/Slurmio/school-dev-k8s.git
