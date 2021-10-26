@@ -1,0 +1,4 @@
+minikube node add - add another node for minikube
+minikube addons list - all addons for minikube
+minikube addons enable <addon_name> - enable any addon for minikube
+minikube image build -t <tag> <directory> - build image directly to minikube
