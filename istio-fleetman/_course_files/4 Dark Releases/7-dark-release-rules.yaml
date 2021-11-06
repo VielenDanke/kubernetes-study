@@ -10,12 +10,12 @@ spec:
     - match:
         - headers:
             x-my-header:
-              exact: canary
+              exact: canary # if header canary - use risky
       route:
         - destination:
             host: fleetman-staff-service
             subset: risky
-    - route:
+    - route: # match all others to safe
         - destination:
             host: fleetman-staff-service
             subset: safe

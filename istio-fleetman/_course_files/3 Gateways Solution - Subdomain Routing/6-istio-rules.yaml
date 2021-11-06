@@ -41,10 +41,10 @@ spec:
   gateways:
     - ingress-gateway-configuration
   http:
-      - route:
-        - destination:
-            host: fleetman-webapp
-            subset: experimental
+    - route:
+      - destination:
+          host: fleetman-webapp
+          subset: experimental
 ---
 kind: DestinationRule
 apiVersion: networking.istio.io/v1alpha3
