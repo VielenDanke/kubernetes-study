@@ -8,14 +8,15 @@ spec:
     - fleetman-staff-service
   http:
     - match:
-        - headers:
-            x-my-header:
-              exact: canary
+      - headers:
+          x-my-header:
+            exact: canary
       fault:
         abort:
           percentage:
             value: 100.0
-        httpStatus: 418 # BE CAREFUL WITH INDENTATION!
+          httpStatus: 418 # BE CAREFUL WITH INDENTATION!
+          # fixedDelay: 10s - introduced fixed delay
       route:
         - destination:
             host: fleetman-staff-service
