@@ -6,4 +6,4 @@ metadata:
   namespace: "istio-system"
 spec:
   mtls:
-    mode: STRICT
+    mode: STRICT # Could be PERMISSIVE - If http client is calling - won't be upgraded
